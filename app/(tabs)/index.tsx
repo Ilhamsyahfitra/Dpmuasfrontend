@@ -130,10 +130,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         paddingTop: Constants.statusBarHeight,
+        backgroundColor: '#F1F8FF', // Biru sangat lembut untuk latar belakang
     },
     title: {
         marginTop: 16,
         marginHorizontal: 16,
+        color: '#1E88E5', // Biru cerah untuk teks judul
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
     listContainer: {
         padding: 16,
@@ -141,20 +145,24 @@ const styles = StyleSheet.create({
     card: {
         marginBottom: 16,
         borderRadius: 8,
+        backgroundColor: '#E3F2FD', // Biru muda untuk kartu
+        elevation: 3,
     },
     description: {
         marginTop: 8,
-        color: 'gray',
+        color: '#546E7A', // Abu-abu kebiruan untuk deskripsi
     },
     fab: {
         position: 'absolute',
         right: 16,
         bottom: 16,
+        backgroundColor: '#FF6F00', // Oranye terang untuk FAB
     },
     inputContainer: {
         padding: 16,
         borderTopLeftRadius: 16,
         borderTopRightRadius: 16,
+        backgroundColor: '#FFFFFF', // Putih untuk latar belakang input
         elevation: 5,
     },
     input: {
@@ -162,9 +170,11 @@ const styles = StyleSheet.create({
     },
     addButton: {
         marginTop: 12,
+        backgroundColor: '#43A047', // Hijau terang untuk tombol "Add Todo"
     },
     cancelButton: {
         marginTop: 8,
+        backgroundColor: '#E53935', // Merah terang untuk tombol "Cancel"
     },
     loading: {
         flex: 1,
@@ -172,5 +182,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 });
+
 
 export default TodosScreen;
