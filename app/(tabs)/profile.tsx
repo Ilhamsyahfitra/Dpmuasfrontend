@@ -60,7 +60,7 @@ const ProfileScreen = () => {
         <PaperProvider>
             <ThemedView style={styles.container}>
                 {profile ? (
-                    <ThemedView>
+                    <ThemedView style={styles.card}>
                         <ThemedText style={styles.title}>Profile</ThemedText>
                         <ThemedText style={styles.label}>Username:</ThemedText>
                         <ThemedText style={styles.value}>{profile.username}</ThemedText>
@@ -96,6 +96,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 16,
+    },
+    card: {
+        backgroundColor: '#ffffff',
+        borderRadius: 12,
+        padding: 20,
+        width: '90%',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        borderWidth: 1,
+        borderColor: '#ddd',
     },
     title: {
         fontSize: 24,
